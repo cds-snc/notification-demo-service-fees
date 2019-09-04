@@ -1,4 +1,5 @@
-const isValidDate = require("../../utils/").isValidDate;
+const isEmail = require("validator/lib/isEmail");
+const isMobilePhone = require("validator/lib/isMobilePhone").default;
 
 const Schema = {
   fullname: {
@@ -8,24 +9,33 @@ const Schema = {
     }
   },
   email: {
-    isLength: {
-      errorMessage: "errors.email.length",
-      options: { min: 3, max: 200 }
-    }
-  },
-  expiry: {
-    customSanitizer: {
-      options: value => {
-        //We want to remove any spaces, dash or underscores
-        return value ? value.replace(/[_]*/g, "") : value;
-      },
-      errorMessage: "errors.expiry.date.format"
-    },
     custom: {
       options: (value, { req }) => {
-        return isValidDate(value);
+        return isEmail(value);
       },
-      errorMessage: "errors.expiry.date"
+      errorMessage: "errors.email.valid"
+    }
+  },
+  phone: {
+    custom: {
+      options: (value, { req }) => {
+        return isMobilePhone(value);
+      },
+      errorMessage: "errors.phone.valid"
+    }
+  },
+  passport_number: {
+    isLength: {
+      errorMessage: "errors.login.length",
+      options: { min: 9, max: 9 }
+    },
+    isAlphanumeric: {
+      errorMessage: "errors.login.alphanumeric"
+    },
+    customSanitizer: {
+      options: value => {
+        return value ? value.toUpperCase() : value;
+      }
     }
   }
 };
