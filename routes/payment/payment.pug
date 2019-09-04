@@ -13,7 +13,7 @@ block content
     
     form.cra-form(method='post')
         +radioButtons('card_type', {1:'Visa',2:'MasterCard'}, data.card_type, 'Name of card', errors)
-        input(name='name', type='hidden', value=name)
-        +textInput('form.ccv', null, 'form.ccv.desc')(class='w-3-4', id='ccv' name='ccv', autofocus, value=data.fullname)
+        +textInput('form.ccv', null, 'form.ccv.desc')(class='w-3-4', id='ccv' name='ccv', autofocus, value=data.ccv)
         +textInput('form.expiry', null, 'form.expiry.desc')(class='w-3-4', id='expiry' name='expiry', autofocus, value=data.expiry)
+        input(name='name', type='hidden', value=name)
         +formButtons()
