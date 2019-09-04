@@ -56,7 +56,7 @@
   "errors.expiry.length": "errors.expiry.length",
   "errors.ccv.length": "errors.ccv.length",
   "form.card_number": "form.card_number",
-  "form.card_number.desc": "form.card_number.desc",
+  "form.card_number.desc": "5555555555554444",
   "errors.email.valid": "errors.email.valid",
   "errors.card_number.valid": "errors.card_number.valid"
 }
