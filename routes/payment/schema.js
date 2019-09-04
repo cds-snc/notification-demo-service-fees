@@ -5,16 +5,16 @@ const Schema = {
       options: [["Visa", "MasterCard"]]
     }
   },
-  expiry: {
-    isLength: {
-      errorMessage: "errors.expiry.length",
-      options: { min: 5, max: 5 }
-    }
-  },
   ccv: {
     isLength: {
       errorMessage: "errors.ccv.length",
       options: { min: 3, max: 3 }
+    }
+  },
+  expiry: {
+    isLength: {
+      errorMessage: "errors.expiry.length",
+      options: { min: 5, max: 5 }
     }
   }
 };

@@ -51,7 +51,7 @@
   "form.ccv": "form.ccv",
   "form.ccv.desc": "form.ccv.desc",
   "form.expiry": "form.expiry",
-  "form.expiry.desc": "form.expiry.desc",
+  "form.expiry.desc": "01/21",
   "errors.card_type.valid": "errors.card_type.valid",
   "errors.expiry.length": "errors.expiry.length",
   "errors.ccv.length": "errors.ccv.length"
