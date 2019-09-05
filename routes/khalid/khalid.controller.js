@@ -6,11 +6,11 @@ const {
   checkErrors,
   getSessionData,
   doRedirect
-} = require("./../../utils");
-const { Schema } = require("./schema.js");
+} = require("../../utils");
+const { Schema } = require("./schema.js.js");
 
 module.exports = app => {
-  const name = "sample";
+  const name = "khalid";
   const route = getRouteByName(name);
 
   addViewPath(app, path.join(__dirname, "./"));
