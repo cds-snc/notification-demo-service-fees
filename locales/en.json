@@ -39,8 +39,8 @@
   "Internal server error": "Internal server error",
   "Page not found": "Page not found",
   "steve.title": "Steve's Route",
-  "steve.intro": "What is your cat's name?",
-  "steve.catname": "Cat's name",
-  "form.catname.desc": "also nicknames",
+  "steve.intro": "Cat's are people too!",
+  "steve.catname": "Cat's informal name",
+  "form.catname.desc": "nicknames only",
   "steve.catname.length": "Cat's name is too short"
 }
