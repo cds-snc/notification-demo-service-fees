@@ -1,0 +1,19 @@
+extends /base
+
+block variables
+  -var title = __('steve.title')
+
+block content
+
+  h1 #{title}
+
+  div
+    p #{__('steve.intro')}
+  
+  form.cra-form(method='post')
+  
+    +textInput('steve.catname', null, 'form.catname.desc')(class='w-3-4', id='steve.catname' name='steve.catname', autofocus, value=data.catname)
+
+    input(name='name', type='hidden', value=name)
+
+    +formButtons()
