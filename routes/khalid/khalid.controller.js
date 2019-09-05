@@ -7,7 +7,7 @@ const {
   getSessionData,
   doRedirect
 } = require("../../utils");
-const { Schema } = require("./schema.js.js");
+const { Schema } = require("./schema.js");
 
 module.exports = app => {
   const name = "khalid";
