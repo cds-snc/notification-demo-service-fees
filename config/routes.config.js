@@ -17,7 +17,7 @@ const configRoutes = app => {
   app.set("appRoutes", routes);
   
   // 🔥
-  require("../routes/_khalid_route/khalid.controller")(app); // remove this
+  require("../routes/khalid/khalid.controller")(app);
   require("../routes/start/start.controller")(app);
   require("../routes/personal/personal.controller")(app);
   require("../routes/confirmation/confirmation.controller")(app);
