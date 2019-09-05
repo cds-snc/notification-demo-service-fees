@@ -1,5 +1,5 @@
 const Schema = {
-  firstname: {
+  catname: {
     isLength: {
       errorMessage: "steve.catname.length",
       options: { min: 3, max: 200 }
