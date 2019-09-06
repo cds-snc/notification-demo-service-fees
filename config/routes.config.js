@@ -9,7 +9,8 @@ const routes = [
   { name: "sample", path: "/sample" }, // remove this
   { name: "start", path: "/start" },
   { name: "personal", path: "/personal" },
-  { name: "confirmation", path: "/confirmation" }
+  { name: "confirmation", path: "/confirmation" },
+  { name: "help", path: "/help" }
 ];
 
 // 2) Add the path to the route controller here ⬇️ ️️
@@ -21,6 +22,7 @@ const configRoutes = app => {
   require("../routes/start/start.controller")(app);
   require("../routes/personal/personal.controller")(app);
   require("../routes/confirmation/confirmation.controller")(app);
+  require("../routes/help/help.controller")(app);
   require("../routes/global/global.controller")(app);
 };
 
