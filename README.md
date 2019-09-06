@@ -29,7 +29,7 @@ upstream        git@github.com:cds-snc/node-starter-app.git (push)
 ## Install + Dev Mode
 
 ```bash
-npm run install
+npm install
 npm run dev
 ```
 
