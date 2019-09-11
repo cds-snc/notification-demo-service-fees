@@ -9,6 +9,7 @@ const routes = [
   { name: "sample", path: "/sample" }, // remove this
   { name: "start", path: "/start" },
   { name: "personal", path: "/personal" },
+  { name: "payment", path: "/payment" },
   { name: "confirmation", path: "/confirmation" },
   { name: "help", path: "/help" }
 ];
@@ -21,6 +22,7 @@ const configRoutes = app => {
   require("../routes/_sample_route/sample.controller")(app); // remove this
   require("../routes/start/start.controller")(app);
   require("../routes/personal/personal.controller")(app);
+  require("../routes/payment/payment.controller")(app);
   require("../routes/confirmation/confirmation.controller")(app);
   require("../routes/help/help.controller")(app);
   require("../routes/global/global.controller")(app);

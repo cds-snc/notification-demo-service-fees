@@ -1,0 +1,20 @@
+extends /base
+include /_includes/radios
+
+block variables
+  -var title = __('payment.title')
+
+block content
+
+  h1 #{title}
+
+  div
+    p #{__('payment.intro')}
+    
+    form.cra-form(method='post')
+        +radioButtons('card_type', {1:'Visa',2:'MasterCard'}, data.card_type, 'Name of card', errors)
+        +textInput('form.card_number', null, 'form.card_number.desc')(class='w-3-4', id='card_number' name='card_number', autofocus, value=data.card_number)
+        +textInput('form.ccv', null, 'form.ccv.desc')(class='w-3-4', id='ccv' name='ccv', autofocus, value=data.ccv)
+        +textInput('form.expiry', null, 'form.expiry.desc')(class='w-3-4', id='expiry' name='expiry', autofocus, value=data.expiry)
+        input(name='name', type='hidden', value=name)
+        +formButtons()
