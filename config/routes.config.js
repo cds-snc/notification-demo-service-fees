@@ -10,7 +10,7 @@ const routes = [
   { name: "start", path: "/start" },
   { name: "personal", path: "/personal" },
   { name: "payment", path: "/payment" },
-  { name: "confirmation", path: "/confirmation" }
+  { name: "confirmation", path: "/confirmation" },
   { name: "help", path: "/help" }
 ];
 
